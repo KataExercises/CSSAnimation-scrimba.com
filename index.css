@@ -1,0 +1,46 @@
+.heading {
+  color: darkblue;
+  font-size: 35px;
+
+  transition: all 0.5s;
+  transition-delay: 1s;
+
+  /*1.  transition: all 1s;
+  transition-delay: 1s; */
+
+  /* transition: color 0.5s, font-size 1s; */
+  /* seting time for transition */
+  /* if you have multiple transitions  seporete them with comas */
+  /* if you have many tarnsitions use "all" */
+  /* to delay transition before start - transition-delay: 1s;*/
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  /* 2. transition-property: all;
+        transition-duration: 1s; 
+        property and duration have to be  together, otherwhise nothing happanes*/
+  /*   transition-timing-function:  
+- linear; 
+- cubic-bezier(0.42, 0, 1, 1);  equivalent to the "ease-in" keyword;
+- steps(4, start); make transition over 4 steps;
+- ease-in-out;
+ */
+}
+
+/* .heading:hover sudo class */
+/* when elements <heading> is hovered over it;s going to change color */
+.heading:hover {
+  color: green;
+  font-size: 70px;
+  letter-spacing: 10px;
+}
+
+/* Short Hand for Transition */
+/* 
+transition: font-size o.5s ease-in 1s;
+-property;
+-duration;
+-timing function;
+-delay;
+
+ */

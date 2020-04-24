@@ -1,0 +1,67 @@
+.box {
+  width: 50px;
+  height: 50px;
+  background: red;
+  border: 1px solid black;
+  animation-delay: 1s;
+  /* delay  until it runs*/
+  animation-name: grow;
+  /* @keyframes grow  */
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  /* how we want to work with our animation, how fast */
+  animation-iteration-count: 4;
+  /* how many time you want animation to run */
+  animation-direction: alternate;
+  /* how we want our animation to play: backwards, reverse, alternate, alternate - reverse */
+  /* animation-fill-mode: both; */
+  /* depents on the animation-direction / forwards, reverse, both */
+
+  animation: grow 3s ease 0s infinite alternate;
+  /* animation: grow 1s ease-in 1s 4 alternate; */
+}
+
+/* @keyframe - sets steps for animation */
+/* from to ; 0%, 40% */
+
+@keyframes grow {
+  /* from 0% to 50% to 100% */
+  /* 0% {
+    width: 500px;
+    height: 50px;
+    background: yellow;
+  }
+  50% {
+    width: 100px;
+    height: 50px;
+    background: salmon;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+    background: aquamarine;
+  } */
+
+  from {
+    width: 100px;
+    height: 100px;
+    background: blue;
+  }
+  to {
+    width: 10px;
+    height: 10px;
+    background: red;
+  }
+}
+
+/* Sort Hand Animation */
+
+/* it has to follow this order
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+     */
+/*  animation: grow 1s ease-in 1s 4 alternate; */

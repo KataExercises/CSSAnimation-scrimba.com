@@ -1,0 +1,10 @@
+.heading {
+  color: pink;
+  font-size: 30px;
+  transition: all 1s ease-in 1s;
+}
+
+.heading:hover {
+  color: lime;
+  font-size: 50px;
+}
