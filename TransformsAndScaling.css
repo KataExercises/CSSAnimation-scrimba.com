@@ -1,0 +1,26 @@
+.box {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* to move it to the center x y axis */
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: red;
+  border: 1px solid black;
+  animation-name: transform;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes transform {
+  100% {
+    transform: translateX(20%) translateY(75%);
+    /* scaleX(2) scaleY(4); */
+  }
+  /*Transform goes here scaleX(2) scaleY(1)  or scale(x, y)*/
+}
+
+/* Translation */
+/* translateX(50px) will move object 50% to the right */
+/* translate(10px 50 px)  10 to the right 50 to the left*/

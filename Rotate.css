@@ -1,0 +1,24 @@
+.box {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: red;
+  border: 1px solid black;
+  animation-name: transform;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes transform {
+  100% {
+    transform: skew(0deg, 70deg);
+  }
+  /* transform: rotate(180deg);
+    
+  } */
+}
+/*  in case rotation to the othe side use nagative -120deg*/
+/* Skew transform rotation along the axis, spining around */
